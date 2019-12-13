@@ -1,16 +1,16 @@
-import * as React from "react";
-import { render } from "react-dom";
-import "./styles.css";
-import monsters from "./Data/monsters.yml";
+import * as React from 'react'
+import { render } from 'react-dom'
+import { Container, CssBaseline } from '@material-ui/core'
+import monsters from './Data/monsters.yml'
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
-  );
+    <Container>
+      <CssBaseline />
+      <h1>Pathfinder 2e Encounter Builder</h1>
+    </Container>
+  )
 }
 
-const rootElement = document.getElementById("root");
-render(<App />, rootElement);
+const rootElement = document.getElementById('root')
+render(<App />, rootElement)
